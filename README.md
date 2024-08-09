@@ -78,20 +78,45 @@ int main() {
 ```
 ## Algorithms
 ### Inverse Right Triangle
-1. start
-2. Input
- Read the desired height of the triangle (n) from the user.
-3. Initialization
-   Set a counter variable row to n.
-   
-4. Outer Loop:
- Repeat while row is greater than or equal to 1.
- Set a counter variable col to 1.
-5. Inner Loop:
-   Repeat while col is less than or equal to row:
-   Print the desired character (e.g., '*' or col) depending on the desired pattern.
-   Increment col by 1.
 
- 6.Print a newline character to move to the next row.  
- 7.Decrement row by 1.  
- 8.End
+1. **Start**
+
+2. **Input**
+   - Read the desired height of the triangle (`n`) from the user.
+
+3. **Initialization**
+   - Set a counter variable `row` to `n`.
+
+4. **Outer Loop:**
+   - Repeat while `row` is greater than or equal to 1.
+   - Set a counter variable `col` to 1.
+
+5. **Inner Loop:**
+   - Repeat while `col` is less than or equal to `row`:
+     - Print the desired character (e.g., `'*'` or `col`) depending on the desired pattern.
+     - Increment `col` by 1.
+
+6. **Newline:**
+   - Print a newline character to move to the next row.
+
+7. **Decrement:**
+   - Decrement `row` by 1.
+
+8. **End**
+
+
+### Reverse PRN
+#### Input:
+1. Read an integer `PRN` from the user.
+
+#### Initialization:
+2. Create a variable `num` to store the extracted digit.
+
+#### Reversing Loop:
+3. **While** `PRN` is greater than 0:
+   - Extract the last digit of `PRN` using `num = PRN % 10`.
+   - Print the extracted digit `num`.
+   - Remove the last digit from `PRN` using `PRN = PRN / 10`.
+
+#### Output:
+4. The reversed number is printed to the console.
